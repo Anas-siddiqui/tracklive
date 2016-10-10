@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+
+    tools:context="cloud.artik.example.hellocloud.main_menu"
+    android:background="#d6d7d7">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Track the device"
+            android:id="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray"/>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:src="@drawable/first"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:onClick="click_track" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Track device"
+            android:id="@+id/textView5"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageButton"
+            android:clickable="true"
+            android:onClick="click_track" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Start tracker"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/wheel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:onClick="click_driving" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Drive mode"
+            android:id="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:clickable="true"
+            android:onClick="click_driving" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:enabled="false"
+            android:id="@+id/btn_driving"
+            android:textColor="#FFFF0000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="stop_driving" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/walking"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:onClick="click_walking" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Walk mode"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageButton3"
+            android:clickable="true"
+            android:onClick="click_walking" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:enabled="false"
+            android:textColor="#FFFF0000"
+            android:id="@+id/btn_walking"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="stop_walking" />
+    </RelativeLayout>
+
+</LinearLayout>

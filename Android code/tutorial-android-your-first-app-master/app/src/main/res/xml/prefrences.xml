@@ -1,0 +1,50 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <PreferenceCategory
+        android:title="Login details">
+
+        <EditTextPreference
+            android:key="device_id"
+            android:title="DEVICE ID"
+            android:defaultValue=""
+
+            android:summary="Your device id provided on artik cloud"
+            android:dialogTitle="enter your device id here" />
+        <EditTextPreference
+            android:key="device_token"
+            android:title="DEVICE TOKEN"
+            android:defaultValue=""
+
+            android:summary="Your device token provided on artik cloud"
+            android:dialogTitle="enter your device token here" />
+        <EditTextPreference
+            android:key="client_id"
+            android:title="CLIENT ID"
+            android:defaultValue=""
+
+            android:summary="Your client id provided on artik develope's application"
+            android:dialogTitle="enter your client id here" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Tracking client">
+
+        <EditTextPreference
+            android:key="time_to_update"
+            android:title="Interval to update data"
+            android:defaultValue="15"
+            android:inputType="number"
+
+            android:summary=""
+            android:dialogTitle="enter time in sec" />
+
+
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

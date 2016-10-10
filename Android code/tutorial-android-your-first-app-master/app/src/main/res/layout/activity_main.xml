@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingRight="16dp"
+	android:paddingLeft="16dp"
+	android:paddingTop="16dp"
+	android:paddingBottom="16dp"
+
+	>
+
+	<RelativeLayout
+		android:id="@+id/ask_for_login"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="Welcome"
+			android:id="@+id/textView2"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="48dp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView"
+			android:src="@drawable/map"
+			android:layout_marginTop="50dp"
+			android:layout_below="@+id/textView2"
+			android:layout_centerHorizontal="true" />
+
+		<Button
+			android:id="@+id/btn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Login"
+			android:textColor="#ffffff"
+			android:background="@drawable/mybtn"
+			android:layout_marginTop="119dp"
+			android:layout_below="@+id/imageView"
+			android:layout_alignParentStart="true" />
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="settings"
+			android:textColor="#ffffff"
+			android:id="@+id/button"
+			android:background="@drawable/mybtn"
+			android:layout_marginTop="46dp"
+			android:layout_below="@+id/btn"
+			android:layout_centerHorizontal="true"
+			android:onClick="settings_click" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="Track live"
+			android:id="@+id/textView6"
+			android:layout_centerVertical="true"
+			android:layout_alignStart="@+id/textView2"
+			android:textStyle="bold" />
+
+	</RelativeLayout>
+
+	<WebView
+		android:id="@+id/webview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:visibility="gone" />
+
+</RelativeLayout>
